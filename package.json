@@ -2,11 +2,12 @@
     "name": "lukhennodetools",
     "version": "1.0.0",
     "description": "Some useful functions I use in my projects.",
-    "main": "index.js",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "scripts": {
         "test": "jest",
         "lint": "./node_modules/eslint/bin/eslint.js .eslintrc.json --ext .ts ./src/",
-        "tsc": "tsc"
+        "tsc": "tsc --build --clean && tsc"
     },
     "author": "",
     "license": "ISC",
